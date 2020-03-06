@@ -1,0 +1,105 @@
+/* CSS Document */
+/*
+    spade    = \2660
+    cubs     = \2663
+    hearts   = \2665
+    diamonds = \2666
+*/
+
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #27a743;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 140px;
+    margin: 10%;
+    width: 100px;
+}
+
+.card .number {
+    display: block;
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.card .spade::before {
+    content: '\2660';
+    width: 100%;
+    display: block;
+    text-align: left;
+    height: 40%;
+    padding-left: 10px;
+}
+.card .spade::after {
+    content: '\2660';
+    width: 100%;
+    display: block;
+    text-align: right;
+    height: 40px;
+    padding-right: 10px;
+    /*transform: scaleY(-1);*/
+}
+
+.card .cubs::before {
+    content: '\2663';
+    width: 100%;
+    display: block;
+    text-align: left;
+    height: 40%;
+    padding-left: 10px;
+}
+.card .cubs::after {
+    content: '\2663';
+    width: 100%;
+    display: block;
+    text-align: right;
+    height: 40px;
+    padding-right: 10px;
+    /*transform: rotate(180deg);*/
+}
+
+.card .hearts::before {
+    content: '\2665';
+    width: 100%;
+    display: block;
+    text-align: left;
+    height: 40%;
+    padding-left: 10px;
+    color: red;
+}
+.card .hearts::after {
+    content: '\2665';
+    width: 100%;
+    display: block;
+    text-align: right;
+    height: 40px;
+    padding-right: 10px;
+    /*transform: rotate(180deg);*/
+    color: red;
+}
+
+.card .diamonds::before {
+    content: '\2666';
+    width: 100%;
+    display: block;
+    text-align: left;
+    height: 40%;
+    padding-left: 10px;
+    color: red;
+}
+.card .diamonds::after {
+    content: '\2666';
+    width: 100%;
+    display: block;
+    text-align: right;
+    height: 40px;
+    padding-right: 10px;
+    /*transform: rotate(180deg);*/
+    color: red;
+}
